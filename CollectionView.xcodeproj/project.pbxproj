@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		37DEC02128333EED00C964BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DEC02028333EED00C964BB /* AppDelegate.swift */; };
 		37DEC02328333EED00C964BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DEC02228333EED00C964BB /* SceneDelegate.swift */; };
-		37DEC02528333EED00C964BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DEC02428333EED00C964BB /* ViewController.swift */; };
 		37DEC02828333EED00C964BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37DEC02628333EED00C964BB /* Main.storyboard */; };
 		37DEC02B28333EED00C964BB /* CollectionView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37DEC02928333EED00C964BB /* CollectionView.xcdatamodeld */; };
 		37DEC02D28333EF100C964BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37DEC02C28333EF100C964BB /* Assets.xcassets */; };
 		37DEC03028333EF100C964BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37DEC02E28333EF100C964BB /* LaunchScreen.storyboard */; };
+		37DEC03828333FE200C964BB /* GridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DEC03728333FE200C964BB /* GridCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37DEC01D28333EED00C964BB /* CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37DEC02028333EED00C964BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37DEC02228333EED00C964BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		37DEC02428333EED00C964BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37DEC02728333EED00C964BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37DEC02A28333EED00C964BB /* CollectionView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CollectionView.xcdatamodel; sourceTree = "<group>"; };
 		37DEC02C28333EF100C964BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37DEC02F28333EF100C964BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37DEC03128333EF100C964BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37DEC03728333FE200C964BB /* GridCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +60,12 @@
 			children = (
 				37DEC02028333EED00C964BB /* AppDelegate.swift */,
 				37DEC02228333EED00C964BB /* SceneDelegate.swift */,
-				37DEC02428333EED00C964BB /* ViewController.swift */,
 				37DEC02628333EED00C964BB /* Main.storyboard */,
 				37DEC02C28333EF100C964BB /* Assets.xcassets */,
 				37DEC02E28333EF100C964BB /* LaunchScreen.storyboard */,
 				37DEC03128333EF100C964BB /* Info.plist */,
 				37DEC02928333EED00C964BB /* CollectionView.xcdatamodeld */,
+				37DEC03728333FE200C964BB /* GridCollectionViewController.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -141,9 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37DEC02528333EED00C964BB /* ViewController.swift in Sources */,
 				37DEC02128333EED00C964BB /* AppDelegate.swift in Sources */,
 				37DEC02B28333EED00C964BB /* CollectionView.xcdatamodeld in Sources */,
+				37DEC03828333FE200C964BB /* GridCollectionViewController.swift in Sources */,
 				37DEC02328333EED00C964BB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
