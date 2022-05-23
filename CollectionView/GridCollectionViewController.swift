@@ -33,8 +33,16 @@ class GridCollectionViewController: UICollectionViewController {
     }
     */
 
-    // MARK: UICollectionViewDataSource
 
+
+
+
+   
+
+}
+
+// MARK: UICollectionViewDataSource
+extension GridCollectionViewController {
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
@@ -53,8 +61,10 @@ class GridCollectionViewController: UICollectionViewController {
     
         return cell
     }
+}
 
-    // MARK: UICollectionViewDelegate
+// MARK: UICollectionViewDelegate
+extension GridCollectionViewController {
 
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
@@ -84,5 +94,4 @@ class GridCollectionViewController: UICollectionViewController {
     
     }
     */
-
 }

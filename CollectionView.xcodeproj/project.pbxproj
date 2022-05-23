@@ -14,6 +14,7 @@
 		37DEC02D28333EF100C964BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37DEC02C28333EF100C964BB /* Assets.xcassets */; };
 		37DEC03028333EF100C964BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37DEC02E28333EF100C964BB /* LaunchScreen.storyboard */; };
 		37DEC03828333FE200C964BB /* GridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DEC03728333FE200C964BB /* GridCollectionViewController.swift */; };
+		37DF672B283C0E200022DBE5 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DF672A283C0E200022DBE5 /* ItemCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		37DEC02F28333EF100C964BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37DEC03128333EF100C964BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37DEC03728333FE200C964BB /* GridCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewController.swift; sourceTree = "<group>"; };
+		37DF672A283C0E200022DBE5 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				37DEC03128333EF100C964BB /* Info.plist */,
 				37DEC02928333EED00C964BB /* CollectionView.xcdatamodeld */,
 				37DEC03728333FE200C964BB /* GridCollectionViewController.swift */,
+				37DF672A283C0E200022DBE5 /* ItemCollectionViewCell.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37DF672B283C0E200022DBE5 /* ItemCollectionViewCell.swift in Sources */,
 				37DEC02128333EED00C964BB /* AppDelegate.swift in Sources */,
 				37DEC02B28333EED00C964BB /* CollectionView.xcdatamodeld in Sources */,
 				37DEC03828333FE200C964BB /* GridCollectionViewController.swift in Sources */,
