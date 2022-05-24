@@ -26,12 +26,6 @@ class GridCollectionViewController: UICollectionViewController {
     }
     */
 
-
-
-
-
-   
-
 }
 
 // MARK: UICollectionViewDataSource
@@ -48,8 +42,11 @@ extension GridCollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! ItemCollectionViewCell
     
+//        cell.ItemLabel.text = String(indexPath.row + 1)
+        cell.ItemLabel.text = "\(indexPath.row + 1)"
+        
         // Configure the cell
         cell.backgroundColor = self.randomColor()
         return cell
