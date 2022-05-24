@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,13 +23,34 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eCm-IS-aNw">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eCm-IS-aNw" customClass="ItemCollectionViewCell" customModule="CollectionView" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3va-Yn-7xt">
                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKK-qM-ycK">
+                                            <rect key="frame" x="43" y="54" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="Oca-bW-iSb"/>
+                                                <constraint firstAttribute="height" constant="21" id="seX-yV-c6M"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="vKK-qM-ycK" secondAttribute="trailing" constant="43" id="bt0-nA-29C"/>
+                                        <constraint firstItem="vKK-qM-ycK" firstAttribute="top" secondItem="3va-Yn-7xt" secondAttribute="top" constant="54" id="hm2-ko-L78"/>
+                                        <constraint firstAttribute="bottom" secondItem="vKK-qM-ycK" secondAttribute="bottom" constant="53" id="ihj-1i-Gt1"/>
+                                        <constraint firstItem="vKK-qM-ycK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3va-Yn-7xt" secondAttribute="leading" constant="20" symbolic="YES" id="wJi-cI-Vns"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="ItemLabel" destination="vKK-qM-ycK" id="ZeP-vB-dMK"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -42,21 +62,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="34K-w7-ZNT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-360" y="199"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="A8J-S5-5AY">
-            <objects>
-                <viewController id="qxd-NE-sUO" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YL7-iP-mGX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="jfz-Nx-Ebm"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HLf-zW-HUm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="438" y="211"/>
         </scene>
     </scenes>
     <resources>
